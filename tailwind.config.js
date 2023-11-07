@@ -4,7 +4,8 @@ export default {
       './index.html',
       './src/**/*.{js,ts,jsx,tsx}'
   ],
-  theme: {
+  darkMode:'class',
+    theme: {
       screens: {
           'sm': '640px',
           // => @media (min-width: 640px) { ... }
@@ -22,11 +23,13 @@ export default {
           // => @media (min-width: 1536px) { ... }
       },
       height: {
-          '500': "500px",
-          '100': "100px",
-          '200': "200px",
-          '300': "300px",
-          '400': "400px",
+        '100': "100px",
+        '200': "200px",
+        '300': "300px",
+        '400': "400px",
+        '500': "500px",
+        '600': '600px',
+        '700': '700px'
       },
     extend: {},
   },

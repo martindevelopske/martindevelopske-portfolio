@@ -4,7 +4,8 @@ import './index.css'
 import {Helmet} from 'react-helmet'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <div className='align-top w-screen border-red-300'>
+  <>
+  <div className='align-top items-center top-0 w-screen min-h-screen'>
       <Helmet>
           <title>Martin Ndung'u || portfolio</title>
           <link rel='canonical' href='https://martindevelopske.com' />
@@ -12,4 +13,5 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       </Helmet>
     <App />
   </div>
+  </>
 )
