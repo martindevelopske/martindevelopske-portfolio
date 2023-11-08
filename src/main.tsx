@@ -5,7 +5,7 @@ import {Helmet} from 'react-helmet'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <>
-  <div className='align-top items-center top-0 w-screen min-h-screen'>
+  <div className='align-top items-center w-full min-h-screen'>
       <Helmet>
           <title>Martin Ndung'u || portfolio</title>
           <link rel='canonical' href='https://martindevelopske.com' />
