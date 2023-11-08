@@ -1,10 +1,6 @@
-function About() {
-  // const imageStyle= {
-  //     width: '150px',
-  //     height: '150px',
-  //     borderRadius: '50%',
+import { StacksData } from "../data/StacksData";
 
-  // }
+function About() {
   return (
     <div className="h-auto dark:text-white text-black bg-slate-900 p- w-full flex items-center justify-center p-5">
       <div className=" w-5/6 flex flex-col items-center gap-3 justify-between h-auto">
@@ -15,7 +11,7 @@ function About() {
             alt="image"
           ></img>
         </div>
-        <div className="w-3/4 h-300 flex items-center justify-center p-2 font-light indent-8 font-mono">
+        <div className="w-3/4 h-300 flex items-center justify-center p-2 indent-8 font-mono font-thin">
           {" "}
           I am a passionate and experienced full-stack developer and DevOps
           engineer with a proven track record of designing, developing, and
@@ -31,9 +27,17 @@ function About() {
           integration and continuous delivery (CI/CD), infrastructure
           automation, and cloud deployment.
         </div>
-        <div className="w-full h-200 border flex flex-col items-start justify-between p-5 ">
+        <div className="w-full h-auto flex flex-col items-start justify-between p-5 gap-3">
           <div className="text-green-300">Tools and Techstacks</div>
-          <div className="w-3/4 border flex h-auto ml-14">show them</div>
+          <div className="w-3/4  p-2 flex gap-2 h-auto ml-14 flex-wrap items-center justify-center">
+            {StacksData.map((img) => {
+              return (
+                <div key={img.id}>
+                  <img src={img.src} alt="" className="w-16 h-60"></img>{" "}
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>

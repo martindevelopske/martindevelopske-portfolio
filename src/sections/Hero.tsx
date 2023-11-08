@@ -29,7 +29,9 @@ export default function Hero() {
                 <div className="font-extralight text-sm">Nairobi, Kenya</div>
               </div>
               <div>
-                <button className="border p-2">Download Resume</button>
+                <button className="border p-2 hover:scale-90">
+                  Download Resume
+                </button>
               </div>
             </div>
             <div className="flex flex-col gap-2 w-1/3 text-sm  items-center justify-center p-3">
@@ -40,12 +42,13 @@ export default function Hero() {
               <div className="flex gap-3 items-center justify-center">
                 {IconsData.map((image) => {
                   return (
-                    <img
-                      key={image.id}
-                      src={image.link}
-                      alt={image.name}
-                      className="w-9 h-36 rounded-lg"
-                    ></img>
+                    <a href={image.href} target="__blank" key={image.id}>
+                      <img
+                        src={image.link}
+                        alt={image.name}
+                        className="w-9 h-36 rounded-lg"
+                      ></img>
+                    </a>
                   );
                 })}
               </div>
