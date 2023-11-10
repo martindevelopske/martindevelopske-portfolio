@@ -6,7 +6,7 @@ function About() {
       <div className=" w-5/6 flex flex-col items-center gap-3 justify-between h-auto">
         <div className="w-41 w-52 h-200 relative">
           <img
-            className=" abosolute top-0 left-0 w-40 rounded-full h-160 object-cover"
+            className="absolute top-0 left-0 w-40 rounded-full h-160 object-cover"
             src="https://res.cloudinary.com/dilbjaf90/image/upload/v1699427995/pp_vqzizd_w0slxx.jpg"
             alt="image"
           ></img>
@@ -38,6 +38,7 @@ function About() {
               );
             })}
           </div>
+
         </div>
       </div>
     </div>

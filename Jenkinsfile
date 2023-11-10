@@ -1,4 +1,4 @@
-pipeline{
+pipeline {
     agent any
     stages {
         stage("Checkout") {
@@ -47,7 +47,7 @@ pipeline{
         }
         stage("Static Code Analysis"){
             steps{
-                echo "Checking link......."
+                echo "Checking lint......."
                 sh 'npm run lint'
             }
             post{
