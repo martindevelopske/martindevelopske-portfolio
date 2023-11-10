@@ -1,17 +1,19 @@
 pipeline{
     agent any
-    stages{
-        stage("Checkout"){
-            steps{
+    stages {
+        stage("Checkout") {
+            steps {
                 echo "Performing checkout...."
-                checkout scm
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], 
+                  userRemoteConfigs: [[credentialsId: 'github-token',
+                  url: 'https://github.com/martindevelopske/portfolio-redone.git']])
             }
-            post{
-                success{
-                    echo "========Checkout executed successfully========"
+            post {
+                success {
+                    echo "========Code Checkout executed successfully========"
                 }
-                failure{
-                    echo "========Checkout execution failed========"
+                failure {
+                    echo "========Code Checkout execution failed========"
                 }
             }
         }
