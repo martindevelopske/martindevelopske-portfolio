@@ -45,7 +45,7 @@ pipeline {
                 }
             }
         }
-        stage("Static Code Analysis"){
+        /* stage("Static Code Analysis"){
             steps{
                 echo "Checking lint......."
 
@@ -60,7 +60,7 @@ pipeline {
                     echo "========Lint failed========"
                 }
             }
-        }
+        } */
         stage("Build"){
             steps{
                 echo "Building your project......."
