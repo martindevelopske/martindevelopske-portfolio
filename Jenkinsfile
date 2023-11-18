@@ -48,9 +48,7 @@ pipeline {
         /* stage("Static Code Analysis"){
             steps{
                 echo "Checking lint......."
-
                 sh 'eslint -c config.eslintrc -f checkstyle /src/* > eslint.xml'
-
             }
             post{
                 success{
