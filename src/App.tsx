@@ -1,6 +1,8 @@
 import Header from "./components/Header.tsx";
 import About from "./sections/About.tsx";
+import Footer from "./sections/Footer.tsx";
 import Hero from "./sections/Hero.tsx";
+import Letswork from "./sections/Letswork.tsx";
 import Projects from "./sections/Projects.tsx";
 
 export default function App() {
@@ -10,6 +12,8 @@ export default function App() {
       <Hero />
       <About />
       <Projects />
+      <Letswork />
+      <Footer />
     </div>
   );
 }

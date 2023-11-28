@@ -25,7 +25,7 @@ export default function Header() {
   };
 
   return (
-    <div className="w-full max-w-full h-50 text-black dark:text-white flex items-center justify-end dark:bg-black bg-lightgray fixed top-0 left-0 p-3 z-50">
+    <div className="w-full max-w-full h-48 text-black dark:text-white flex items-center justify-end dark:bg-black bg-lightgray fixed top-0 left-0 p-3 z-50">
       <button className="hover:scale-90" onClick={handleThemeSwitch}>
         {theme === "light" ? <FaMoon size={20} /> : <FiSun size={20} />}
       </button>
