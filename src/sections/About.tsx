@@ -2,7 +2,10 @@ import { StacksData } from "../data/StacksData";
 
 function About() {
   return (
-    <div className="h-auto dark:text-white text-black bg-slate-900 p- w-full flex items-center justify-center h-auto p-5">
+    <div
+      id="about"
+      className="h-auto dark:text-white text-black bg-slate-900 p- w-full flex items-center justify-center h-auto p-5"
+    >
       <div className=" w-full md:w-5/6 flex flex-col items-center gap-5 justify-center h-auto">
         <div className="w-40 h-160 flex items-center justify-center relative p-3">
           <img

@@ -1,14 +1,12 @@
+import { Link } from "react-router-dom";
 import { IconsData } from "../data/Iconsdata";
-import { scroller } from "react-scroll";
+import scrollToElement from "../helpers/Sroller";
 export default function Footer() {
-  const scrollToElement = (el: string) => {
-    scroller.scrollTo(el, { smooth: true, offset: -60 });
-  };
   return (
     <div className="w-full h-100 py-4 flex items-center justify-center bg-blackbg dark:text-white text-black">
-      <div className="w-5/6 h-full flex justify-between items-center">
+      <div className="w-5/6 h-full flex gap-3 flex-col md:flex-row justify-between items-center">
         <div className="flex items-center justify-center">
-          <ul className="flex text-sm gap-2">
+          <ul className="flex text-sm md:text-md gap-2">
             <li
               className="cursor-pointer hover:text-green-600"
               onClick={() => scrollToElement("hero")}
@@ -27,12 +25,9 @@ export default function Footer() {
             >
               projects
             </li>
-            <li
-              className="cursor-pointer hover:text-green-600"
-              onClick={() => scrollToElement("hero")}
-            >
+            <Link to="/resume" className="cursor-pointer hover:text-green-600">
               resume
-            </li>
+            </Link>
             <li
               className="cursor-pointer hover:text-green-600"
               onClick={() => scrollToElement("contact")}

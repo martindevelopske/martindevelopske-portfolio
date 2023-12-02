@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { IconsData } from "../data/Iconsdata";
 
 export default function Hero() {
@@ -35,10 +36,15 @@ export default function Hero() {
                 </div>
                 <div className="font-extralight text-sm">Nairobi, Kenya</div>
               </div>
-              <div>
+              <div className="flex  gap-3">
                 <button className="border p-2 hover:scale-90 text-green-400">
                   Download Resume
                 </button>
+                <Link to="/resume">
+                  <button className="border border-green-400 p-2 hover:scale-90 text-white bg-green-600">
+                    View Resume
+                  </button>
+                </Link>
               </div>
             </div>
             <div className="flex flex-col gap-5 text-sm items-start justify-center md:w-3/4 w-full mt-8  h-full">

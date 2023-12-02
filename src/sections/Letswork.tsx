@@ -1,3 +1,5 @@
+import scrollToElement from "../helpers/Sroller";
+
 function Letswork() {
   return (
     <div className="w-full h-auto p-7 dark:text-white text-black flex flex-col md:flex-row items-center justify-center bg-gradient-to-b from-gradient-top to-black">
@@ -13,7 +15,10 @@ function Letswork() {
           </div>
         </div>
         <div className=" flex items-center justify-center w-11/12 md:w-2/5">
-          <button className="bg-green-500 md:p-5 p-3 flex items-center justify-center">
+          <button
+            className="bg-green-500 md:p-5 p-3 flex items-center justify-center"
+            onClick={() => scrollToElement("contact")}
+          >
             Contact
           </button>
         </div>{" "}

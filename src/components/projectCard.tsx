@@ -7,13 +7,7 @@ interface cardInput {
   github: string;
   stack?: string[];
 }
-export default function ProjectCard({
-  name,
-  image,
-  stack,
-  link,
-  github,
-}: cardInput) {
+export default function ProjectCard({ name, image, link, github }: cardInput) {
   return (
     <>
       <div className="flex flex-col w-full md:w-2/5 items-start gap-4 hover:scale-95">
