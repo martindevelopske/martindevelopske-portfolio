@@ -5,6 +5,7 @@ import Projects from "../sections/Projects";
 import Letswork from "../sections/Letswork";
 import Footer from "../sections/Footer";
 import Contact from "../sections/Contact";
+import Whatsapp from "../components/Whatsapp";
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
       <Letswork />
       <Contact />
       <Footer />
+      <Whatsapp />
     </div>
   );
 }
