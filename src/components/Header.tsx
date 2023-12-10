@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaMoon } from "react-icons/fa";
 import { FiSun } from "react-icons/fi";
+import { FaArrowLeft } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 
 type Theme = "dark" | "light";
@@ -32,7 +33,12 @@ export default function Header() {
     <div className="w-full max-w-full h-48 text-black dark:text-white flex items-center justify-between dark:bg-black bg-lightgray fixed top-0 left-0 p-3 z-50">
       {currentpage === "/resume" && (
         <Link to="/" className="text-black dark:text-white">
-          back
+          <FaArrowLeft size={20} />
+        </Link>
+      )}
+      {currentpage === "/resume" && (
+        <Link to="/" className="text-black dark:text-white">
+          <button>get a copy</button>
         </Link>
       )}
       <button className="hover:scale-90" onClick={handleThemeSwitch}>
