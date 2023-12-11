@@ -45,6 +45,7 @@ export default {
         "1e": "#1e1e1e",
         blackbg: "#101010",
         pinkred: "#c91c29",
+        greyish: "#e3e3e3",
       },
       fontSize: {
         sm: "0.8rem",

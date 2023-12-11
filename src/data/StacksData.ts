@@ -14,7 +14,7 @@ export const StacksData = [
   { id: 13, src: "/logos/jenkins.svg" },
   { id: 14, src: "/logos/docker.png" },
   { id: 15, src: "/logos/kubs.png" },
-  { id: 16, src: "/logos/ansible.svg" },
-  { id: 17, src: "/logos/terraform.svg" },
-  { id: 18, src: "/logos/aws.svg" },
+  // { id: 16, src: "/logos/ansible.svg" },
+  // { id: 17, src: "/logos/terraform.svg" },
+  // { id: 18, src: "/logos/aws.svg" },
 ];

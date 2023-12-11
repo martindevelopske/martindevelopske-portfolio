@@ -2,49 +2,27 @@
 
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
-
-// function Resume() {
-//   return (
-//     <>
-//       <div className="flex flex-col items-center text-black dark:text-white bg-blackbg w-full h-auto min-h-screen">
-//         <div>
-//           <Header />
-//         </div>
-//         <div className="w-5/6 mt-12 flex flex-col items-center justify-center md:w-5/6 lg:w-3/4 border h-500">
-//           <div className="border w-full h-auto">
-//             <div>
-//               <div>Martin Ndung'u</div>
-//               <div>
-//                 Full stack developer and DevOps Engineer || Nairobi, Kenya ||
-//                 phone: +2354703605544 || Portfolio
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </>
-//   );
-// }
-
-// export default Resume;
-// Resume.js
+import { IconsData } from "../data/Iconsdata";
 
 const Resume = () => {
   return (
-    <div className="w-full sm:text-sm md:text-base h-auto min-h-screen bg-blackbg flex flex-col items-center justify-center font-mono dark:text-white">
+    <div className="w-full sm:text-sm md:text-base h-auto min-h-screen dark:bg-blackbg flex flex-col items-center justify-center font-mono dark:text-white bg-greyish">
       <div className="w-5/6">
         <Header />
       </div>
       <div className="w-full md:w-5/6 lg:w-3/4 mt-14">
-        <div className="max-w-2xl mx-auto p-4 bg-blackbg light:text-black dark:text-white rounded-md shadow">
-          <div className="max-w-2xl mx-auto mt-10 p-4 rounded-md shadow text-center">
-            <h1 className="text-base font-bold mb-4 text-green-400">
+        <div className="max-w-2xl mx-auto p-6 bg-white dark:bg-blackbg light:text-black dark:text-white rounded-md">
+          <div className="max-w-2xl mx-auto mt-10 p-4 rounded-md text-center">
+            <h1 className="text-base font-bold mb-4 text-green-600">
               Martin Ndung'u - Full Stack Developer & DevOps Engineer
             </h1>
-            <div className="max-w-2xl mx-auto p-2 w-full md:w-3/4 rounded-md shadow text-center text-sm md:text-base">
+            <div className="max-w-2xl mx-auto p-2 w-full md:w-3/4 rounded-md text-center text-sm md:text-base">
               <p className="font-bold mb-4">
                 Nairobi, Kenya || phone: +254703605544 ||
-                <Link to="" className="text-blue-400">
+                <Link
+                  to="mailto:martindevelopske@gmail.com"
+                  className="text-blue-400"
+                >
                   {" "}
                   martindevelopske@gmail.com
                 </Link>
@@ -73,7 +51,7 @@ const Resume = () => {
 
           {/* Add more sections as needed */}
 
-          <h2 className="text-base font-bold mt-4 mb-2 text-green-400">
+          <h2 className="text-base font-bold mt-4 mb-2 text-green-600">
             Experience
           </h2>
 
@@ -81,7 +59,11 @@ const Resume = () => {
             <div className="flex justify-between">
               <strong className="text-red-400">
                 Songa: Back-end Engineer (
-                <Link to="" className=" text-blue-600">
+                <Link
+                  to="https://www.linkedin.com/company/songaapp/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B1JKUV3VZRuKNgXpz6fLz9g%3D%3D"
+                  target="__blank"
+                  className=" text-blue-600"
+                >
                   LinkedIn
                 </Link>
                 )
@@ -119,30 +101,45 @@ const Resume = () => {
 
           {/* Add more experience entries as needed */}
 
-          <h2 className="text-base font-bold mt-4 mb-2 text-green-400">
+          <h2 className="text-base font-bold mt-4 mb-2 text-green-600">
             Technical Skills
           </h2>
 
           <ul className="list-disc ml-6 text-md">
             <li>
-              Front-End: React, Nextjs, Typescript, Javascript, CSS, Tailwind,
-              Bootstrap, MUI, HTML.
+              <strong>Front-end:</strong> React, Nextjs, Typescript, Javascript,
+              CSS, Tailwind, Bootstrap, MUI, HTML.
             </li>
             <li>
-              Back-End: NodeJs, Javascript, Typescript, Express, Prisma ORM.
+              <strong>Back-end:</strong> NodeJs, Javascript, Typescript,
+              Express, Prisma ORM.
             </li>
-            <li>Databases: MongoDB, Redis, Postgresql.</li>
-            <li>Devops: Git, Jenkins, Docker, Kubernetes, Terraform, AWS.</li>
+            <li>
+              <strong>Databases:</strong> MongoDB, Redis, Postgresql.
+            </li>
+            <li>
+              <strong>DevOps:</strong> Git, Jenkins, Docker, Kubernetes,
+              Terraform, AWS.
+            </li>
           </ul>
 
           {/* Add more sections as needed */}
 
-          <h2 className="text-base font-bold mt-4 mb-2 text-green-400">
+          <h2 className="text-base font-bold mt-4 mb-2 text-green-600">
             Projects
           </h2>
 
           <p className="text-md">
-            <strong className="text-red-400">Songa App (view)</strong>
+            <strong className="text-red-400">
+              Songa App{" "}
+              <Link
+                to="https://www.linkedin.com/company/songaapp/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B1JKUV3VZRuKNgXpz6fLz9g%3D%3D"
+                target="__blank"
+                className=" text-blue-600"
+              >
+                (View)
+              </Link>
+            </strong>
             <br />
             Songa is a ride service application which bridges the gap between
             riders in Kenya and their clients. At songa, I worked as a back-end
@@ -156,7 +153,12 @@ const Resume = () => {
           </p>
           <br />
           <p className="text-md">
-            <strong className="text-red-400">Quick-sale (view)</strong>
+            <strong className="text-red-400">
+              Quick-sale{" "}
+              <Link to="" className=" text-blue-600">
+                (View)
+              </Link>
+            </strong>
             <br />
             This is a project that I received from a Client who basically wanted
             an e-commerce shop with all the functionalities involved. The
@@ -180,7 +182,7 @@ const Resume = () => {
           </div>
           {/* Add more project entries as needed */}
 
-          <h2 className="text-base font-bold mt-4 mb-2 text-green-400">
+          <h2 className="text-base font-bold mt-4 mb-2 text-green-600">
             Interests
           </h2>
 
@@ -189,18 +191,39 @@ const Resume = () => {
             free time. I also love coding things out for fun.
           </p>
 
-          <h2 className="text-base font-bold mt-4 mb-2 text-green-400">
+          <h2 className="text-base font-bold mt-4 mb-2 text-green-600">
             Important Links
           </h2>
 
-          <ul className="list-disc ml-6 text-md text-blue-400">
-            <li>
-              <Link to="">LinkedIn</Link> <span className="text-white">||</span>{" "}
-              <Link to="">Github</Link> <span className="text-white">|| </span>{" "}
-              <Link to="">X </Link>
+          <div className=" w-full list-disc ml-6 text-md text-blue-400 flex gap-2 flex-wrap">
+            <div className="flex gap-2">
+              <Link
+                to="www.linkedin.com/in/martin-ndungu-nganga"
+                className="flex gap-2"
+              >
+                LinkedIn{" "}
+                <img src={IconsData[2].link} alt="icons" className="h-25 w-6" />
+              </Link>
+            </div>
+            <span className="text-white">||</span>{" "}
+            <div className="flex gap-2">
+              <Link
+                to="https://github.com/martindevelopske"
+                className="flex gap-2"
+              >
+                Github{" "}
+                <img src={IconsData[1].link} alt="icons" className="h-25 w-6" />
+              </Link>
+            </div>
+            <span className="text-white">|| </span>
+            <div className="flex gap-2">
+              <Link to="https://x.com/martindevelops" className="flex gap-2">
+                X{" "}
+                <img src={IconsData[0].link} alt="icons" className="h-25 w-6" />
+              </Link>
               <span className="text-white">(Formerly Twitter)</span>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>

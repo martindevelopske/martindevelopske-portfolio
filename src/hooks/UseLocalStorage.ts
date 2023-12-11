@@ -2,9 +2,7 @@ export const useLocalStorage = (key: string) => {
   const setItem = (value: unknown) => {
     try {
       window.localStorage.setItem(key, JSON.stringify(value));
-    } catch (err: unknown) {
-      console.log(err);
-    }
+    } catch (err: unknown) {return undefined}
   };
   const getItem = () => {
     let item;
@@ -12,7 +10,6 @@ export const useLocalStorage = (key: string) => {
       item = window.localStorage.getItem("formValue");
       return item;
     } catch (err: unknown) {
-      console.log(err);
       return undefined;
     }
   };

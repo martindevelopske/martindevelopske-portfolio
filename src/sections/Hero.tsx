@@ -5,16 +5,19 @@ export default function Hero() {
   return (
     <div
       id="hero"
-      className=" mt-12 flex justify-center items-start bg-slate-200  dark:text-white dark:bg-blackbg w-full p-3 text-black min-content"
+      className=" mt-12 flex justify-center items-start  dark:bg-blackbg bg-white w-full p-3 text-black dark:text-white min-content"
     >
       <div className="p-3 flex flex-col items-start justify-between gap-8 h-full">
-        <div className="text-2xl text-green-300">Martin Ndung'u</div>
+        <div className="text-2xl text-green-600 dark:text-green-300">
+          Martin Ndung'u
+        </div>
 
         <div className=" flex flex-col gap-12 h-auto">
-          <div className="flex flex-col gap-2 w-3/4 mt-12 text-3xl md:text-5xl h-250 md:h-auto">
-            <div>I build</div>
-            <div className="text-purple-500">beautiful experiences</div>
-            <div>for the web.</div>
+          <div className="flex flex-col gap-2 w-3/4 mt-12 text-2xl md:text-4xl h-auto md:h-auto">
+            <div>Web alchemist.</div>
+            <div>Weaving code into</div>
+            <div className="text-purple-500">beautiful and seamless</div>
+            <div>Digital narratives.</div>
           </div>
         </div>
 
@@ -37,11 +40,16 @@ export default function Hero() {
                 <div className="font-extralight text-sm">Nairobi, Kenya</div>
               </div>
               <div className="flex  gap-3">
-                <button className="border p-2 hover:scale-90 text-green-400">
-                  Download Resume
-                </button>
+                <a
+                  href="/Martin-Ndung'u-Resume.pdf"
+                  download="Martin-Ndung'u-Resume.pdf"
+                >
+                  <button className="border p-2 hover:scale-90 text-green-600 rounded-md">
+                    Download Resume
+                  </button>
+                </a>
                 <Link to="/resume">
-                  <button className="border border-green-400 p-2 hover:scale-90 text-white bg-green-600">
+                  <button className="border border-green-400 p-2 hover:scale-90 text-white bg-green-600 rounded-md">
                     View Resume
                   </button>
                 </Link>

@@ -3,7 +3,7 @@ import { IconsData } from "../data/Iconsdata";
 import scrollToElement from "../helpers/Sroller";
 export default function Footer() {
   return (
-    <div className="w-full h-100 py-4 flex items-center justify-center bg-blackbg dark:text-white text-black">
+    <div className="w-full h-100 py-4 flex items-center justify-center dark:bg-blackbg dark:text-white text-black bg-white">
       <div className="w-5/6 h-full flex gap-3 flex-col md:flex-row justify-between items-center">
         <div className="flex items-center justify-center">
           <ul className="flex text-sm md:text-md gap-2">

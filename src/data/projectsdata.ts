@@ -11,6 +11,7 @@ export const ProjectsData = [
     description:
       "Songa is a ride service application which bridges the gap between riders in Kenya and their clients. At songa, I worked as a backend engineer where I, together with a team of other developers collaborated in developing the API that is consumed by the application. We mostly used Typescript, Node js, express, geolocations API, postgreSQL and prisma ORM in this application. At songa, I learnt so much from working with teams to developing such a very complex API which can have very many users consuming it at a given moment.  ",
     category: "back-end",
+    inProgress: false,
   },
   {
     id: 2,
@@ -32,6 +33,7 @@ export const ProjectsData = [
     description:
       "This is a project that I recieved from a Client who basically wanted an e-commerce shop with all the functionalities involved. The application was built with a node js back end and a react frontend. The user was able to signup and login, search for specific products, make an order, make payments for the product and also complete checkout. They also recieved notifications after actions like purchases and new items in stock that they are interested in. The owner also had and admin dashboard of their own where they were able to post new products, track their items in stock, see purchases made and orders made and also approve orders. This was a very big project that I was so happy to complete and the client walked away happy and completely satisfied. ",
     category: "Front-end",
+    inProgress: false,
   },
   {
     id: 3,
@@ -48,6 +50,7 @@ export const ProjectsData = [
     description:
       "This was just a simple frontend  project where I decided to clone the famous Tesla landing page. I mainly did this to have a refresh and sharpen on my styling skills.",
     category: "Front-end",
+    inProgress: false,
   },
   {
     id: 4,
@@ -67,5 +70,6 @@ export const ProjectsData = [
     description:
       "This was a project I did where I built a blogs API in which consumes another API to fetch articles of diffrent kinds. Also, a user can authenticate and login and they will get blogs according to their preference. I also built the front end part of it with all the functionality available. It also has search functionality where you can get an article of a particular weather.",
     category: "Front-end",
+    inProgress: false,
   },
 ];
