@@ -18,17 +18,24 @@ function Contact() {
         !name && nameRef.current?.focus();
         !email && emailRef.current?.focus();
         !message && messageRef.current?.focus();
-        throw Error;
+        throw new Error("Missing required fields"); // Throw an actual error object
       }
       setIsLoading(true);
       await sendEmail({ name, email, message });
       setIsLoading(false);
       setIsSent(true);
-      setTimeout(() => setIsSent(false), 3000);
-    } catch (err) {
-      return undefined;
+      setTimeout(() => {
+        setIsSent(false);
+        // Clear the input values through refs
+        nameRef.current && (nameRef.current.value = "");
+        messageRef.current && (messageRef.current.value = "");
+        emailRef.current && (emailRef.current.value = "");
+      }, 3000);
+    } catch (err: unknown) {
+      return false;
     }
   };
+
   return (
     <>
       <div

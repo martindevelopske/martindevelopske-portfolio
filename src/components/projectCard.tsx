@@ -17,13 +17,13 @@ export default function ProjectCard({
 }: cardInput) {
   return (
     <>
-      <div className="relative flex flex-col w-full md:w-2/5 items-start gap-4 hover:scale-95">
+      <div className="relative flex flex-col w-full md:w-2/5 items-start gap-4 hover:scale-95 rounded-md">
         {inProgress && (
           <div className="absolute top-0 right-0 bg-green-500 text-white p-2">
             in Progress
           </div>
         )}
-        <div className="dark:bg-cardbg bg-greyish w-full h-300 flex items-center justify-center shadow-2xl">
+        <div className="dark:bg-cardbg bg-greyish w-full h-300 flex items-center justify-center shadow-2xl rounded-md">
           <img
             src={image}
             className=" w-4/5 h-200 shadow-2xl object-cover"
@@ -46,14 +46,14 @@ export default function ProjectCard({
             href={link}
             className="py-3 mr-5 text-green-600 flex gap-2 hover:scale-105"
           >
-            {github && (
+            {/* {github && (
               <div className="flex gap-2">
                 <div>Github</div>
                 <div>
                   <IoLogoGithub />
                 </div>
               </div>
-            )}
+            )} */}
           </a>
         </div>
       </div>

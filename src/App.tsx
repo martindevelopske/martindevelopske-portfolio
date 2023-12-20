@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Resume from "./pages/Resume";
+import { ThemeProvider } from "./contexts/ThemeContext";
 
 export default function App() {
   const router = createBrowserRouter([
@@ -13,5 +14,9 @@ export default function App() {
       element: <Resume />,
     },
   ]);
-  return <RouterProvider router={router} />;
+  return (
+    <ThemeProvider>
+      <RouterProvider router={router} />
+    </ThemeProvider>
+  );
 }

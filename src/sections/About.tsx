@@ -4,7 +4,7 @@ function About() {
   return (
     <div
       id="about"
-      className="h-auto dark:text-white text-black bg-greyish dark:bg-slate-900 p- w-full flex items-center justify-center lg:h-600 p-5"
+      className="h-auto dark:text-white text-black bg-greyish dark:bg-slate-900 p- w-full flex items-center justify-center md:h-700 p-5"
     >
       <div className=" w-full md:w-5/6 flex flex-col items-center gap-5 justify-center h-auto">
         <div className="w-40 h-160 flex items-center justify-center relative p-3">

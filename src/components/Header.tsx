@@ -1,22 +1,17 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import { FaMoon } from "react-icons/fa";
 import { FiSun } from "react-icons/fi";
 import { FaArrowLeft } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
+import { ThemeContext } from "../contexts/ThemeContext";
 
-type Theme = "dark" | "light";
+// type Theme = "dark" | "light";
 export default function Header() {
   const currentpage = useLocation().pathname;
+  const { theme, toggleTheme } = useContext(ThemeContext);
 
-  const [theme, setTheme] = useState<Theme | null>(null);
   useEffect(() => {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
-  }, []);
-  useEffect(() => {
+    console.log(theme);
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
     } else {
@@ -24,8 +19,9 @@ export default function Header() {
     }
   }, [theme]);
 
+  // Theme switch handler
   const handleThemeSwitch = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
+    toggleTheme();
   };
 
   return (
@@ -50,7 +46,11 @@ export default function Header() {
         </a>
       )}
       <button className="hover:scale-90" onClick={handleThemeSwitch}>
-        {theme === "light" ? <FaMoon size={20} /> : <FiSun size={20} />}
+        {localStorage.theme === "light" ? (
+          <FaMoon size={20} />
+        ) : (
+          <FiSun size={20} />
+        )}
       </button>
     </div>
   );
