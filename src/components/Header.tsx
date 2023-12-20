@@ -11,7 +11,6 @@ export default function Header() {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   useEffect(() => {
-    console.log(theme);
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
     } else {
