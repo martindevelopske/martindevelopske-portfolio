@@ -23,7 +23,7 @@ export const ProjectsData = [
   {
     id: 2,
     name: "Portfolio",
-    img: "",
+    img: "https://res.cloudinary.com/dilbjaf90/image/upload/v1703156807/siteshot_jepmpl.jpg",
     stack: [
       "/logos/36/js36.png",
       "/logos/36/ex50.png",
