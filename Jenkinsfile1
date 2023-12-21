@@ -1,0 +1,42 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Build Docker Image') {
+            steps {
+                script {
+                    def imageName = "your-username/your-app-name"
+                    def dockerImage = docker.build(imageName, "-f Dockerfile .")
+
+                    // Tag the Docker image
+                    dockerImage.inside {
+                        sh 'echo "Do any additional build steps here if needed"'
+                    }
+                }
+            }
+        }
+
+        stage('Push to Render') {
+            steps {
+                script {
+                    withCredentials([usernamePassword(credentialsId: 'render-credentials', passwordVariable: 'RENDER_PASSWORD', usernameVariable: 'RENDER_USERNAME')]) {
+                        // Log in to Render Docker Registry
+                        sh "docker login -u $RENDER_USERNAME -p $RENDER_PASSWORD registry.render.com"
+
+                        // Tag the image for Render
+                        sh "docker tag ${imageName} registry.render.com/${imageName}"
+
+                        // Push the Docker image to Render
+                        sh "docker push registry.render.com/${imageName}"
+                    }
+                }
+            }
+        }
+    }
+}

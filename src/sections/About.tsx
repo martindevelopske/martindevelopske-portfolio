@@ -4,7 +4,7 @@ function About() {
   return (
     <div
       id="about"
-      className="h-auto dark:text-white text-black bg-greyish dark:bg-slate-900 p- w-full flex items-center justify-center md:h-700 p-5"
+      className="h-auto dark:text-white text-black bg-gradient-to-b from-greyish to-white dark:bg-gradient-to-b dark:from-gradient-top dark:to-black w-full flex items-center justify-center md:h-700 p-5"
     >
       <div className=" w-full md:w-5/6 flex flex-col items-center gap-5 justify-center h-auto">
         <div className="w-40 h-160 flex items-center justify-center relative p-3">
@@ -14,22 +14,23 @@ function About() {
             alt="image"
           ></img>
         </div>
-        <div className="w-full h-auto flex items-center justify-center p-2 indent-8 font-mono font-thin">
-          {" "}
+
+        <div className="prose w-full max-w-none">
           I am a passionate and experienced full-stack developer and DevOps
           engineer with a proven track record of designing, developing, and
           deploying high-quality web applications. I possess a deep
           understanding of both front-end and back-end technologies, enabling me
           to create seamless user experiences and robust server-side
-          architectures.
-          <br />
-          <br />
-          My expertise lies in utilizing a variety of programming languages and
-          frameworks, including JavaScript, Typescript, React, Next JS, and
-          Node.js. I am proficient in implementing DevOps practices, including
-          continuous integration and continuous delivery (CI/CD), infrastructure
+          architectures. My expertise lies in utilizing a variety of programming
+          languages and frameworks, including:
+          <span className="text-green-600">
+            JavaScript, Typescript, React, Next JS, and Node.js.
+          </span>
+          I am proficient in implementing DevOps practices, including continuous
+          integration and continuous delivery (CI/CD), infrastructure
           automation, and cloud deployment.
         </div>
+
         <div className="w-full h-auto flex flex-col items-start justify-start p-5 gap-3">
           <div className="dark:text-green-400 text-green-600">
             Tools and Techstacks

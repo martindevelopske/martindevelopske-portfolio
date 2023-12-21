@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div
       id="hero"
-      className=" mt-12 flex justify-center items-start  dark:bg-blackbg bg-white w-full p-3 text-black dark:text-white min-content"
+      className="flex mt-24 justify-center items-start dark:bg-gradient-to-b from-black via-gradient-top to-blackbg bg-white w-full p-3 text-black dark:text-white min-content"
     >
       <div className="p-3 flex flex-col items-start justify-between gap-8 h-full">
         <div className="text-2xl text-green-600 dark:text-green-300">

@@ -26,6 +26,7 @@ export default {
       50: "50px",
       64: "64px",
       100: "100px",
+      130: "130px",
       160: "160px",
       200: "200px",
       250: "250px",
@@ -46,6 +47,9 @@ export default {
         blackbg: "#101010",
         pinkred: "#c91c29",
         greyish: "#e3e3e3",
+        lightgreen: "#152a1d",
+        verylightgreen: "#e2f7ea",
+        line: "#2f2f2f",
       },
       fontSize: {
         sm: "0.8rem",
