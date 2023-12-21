@@ -1,4 +1,4 @@
-import React, { ReactNode, createContext, useState } from "react";
+import { ReactNode, createContext, useState } from "react";
 
 // Create a context with default values
 const ThemeContext = createContext({

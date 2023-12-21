@@ -1,5 +1,4 @@
 import { GoArrowUpRight } from "react-icons/go";
-import { IoLogoGithub } from "react-icons/io5";
 interface cardInput {
   name: string;
   image: string;
@@ -15,7 +14,6 @@ export default function ProjectCard({
   image,
   link,
   title,
-  github,
   headline,
   inProgress,
 }: cardInput) {
