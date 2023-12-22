@@ -32,7 +32,9 @@ export default function ProjectCard({
         </div>
         <div className="flex flex-col gap-1 text-md h-130">
           <div className="font-bold">{name}</div>
-          <div className="font-light opacity-80">{headline}</div>
+          <div className="font-light opacity-80 text-sm lg:text-md">
+            {headline}
+          </div>
         </div>
         <div className="dark:bg-cardbg w-full h-160 flex items-center justify-center rounded-md ">
           <img

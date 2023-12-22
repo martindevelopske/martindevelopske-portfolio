@@ -16,19 +16,20 @@ function About() {
         </div>
 
         <div className="prose w-full max-w-none">
-          I am a passionate and experienced full-stack developer and DevOps
-          engineer with a proven track record of designing, developing, and
-          deploying high-quality web applications. I possess a deep
-          understanding of both front-end and back-end technologies, enabling me
-          to create seamless user experiences and robust server-side
-          architectures. My expertise lies in utilizing a variety of programming
-          languages and frameworks, including:
+          I have extensive experience developing and executing top-notch web
+          apps as a seasoned full-stack developer. With a strong background in
+          server-side architecture and seamless user experiences, I am
+          proficient in both front-end and back-end technologies. I am committed
+          to providing creative solutions and keeping up with the most recent
+          business trends in order to effectively contribute to any development
+          project. I have a track record of success in this regard. My expertise
+          lies in utilizing a variety of programming languages, frameworks and
+          tools including:
           <span className="text-green-600">
-            JavaScript, Typescript, React, Next JS, and Node.js.
+            JavaScript, Typescript, React, Next JS, Tailwind CSS and Node.js,
+            Prisma ORM, Mongo DB, Redis, Postgresql, Git, Jenkins, Docker,
+            Kubernetes.
           </span>
-          I am proficient in implementing DevOps practices, including continuous
-          integration and continuous delivery (CI/CD), infrastructure
-          automation, and cloud deployment.
         </div>
 
         <div className="w-full h-auto flex flex-col items-start justify-start p-5 gap-3">
