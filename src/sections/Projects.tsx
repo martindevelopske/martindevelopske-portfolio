@@ -9,7 +9,7 @@ function Projects() {
       className="h-auto text-black bg-greyish dark:bg-gradient-to-b from-1e to-black w-full flex flex-col items-center justify-between dark:text-white"
       data-name="projects"
     >
-      <div className="flex justify-between items-center my-5 w-full">
+      <div className="flex justify-between items-center my-5 w-full px-5">
         <div className=" text-lg md:text-2xl">Featured Projects</div>
         <Link to="/projects">
           <button className="border border-green-600 rounded-3xl p-2 hover:scale-90 text-green-600">

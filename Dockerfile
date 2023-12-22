@@ -2,7 +2,7 @@ FROM node:21-alpine as build
 WORKDIR /app
 COPY package*.json .
 RUN npm cache clean --force
-RUN npm install --verbose
+RUN npm install
 COPY . .
 
 #run stage

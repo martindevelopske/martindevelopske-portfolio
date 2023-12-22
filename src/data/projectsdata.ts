@@ -73,7 +73,8 @@ export const ProjectsData = [
     github: "",
     description:
       "This is a project that I recieved from a Client who basically wanted an e-commerce shop with all the functionalities involved. The application was built with a node js back end and a react frontend. The user was able to signup and login, search for specific products, make an order, make payments for the product and also complete checkout. They also recieved notifications after actions like purchases and new items in stock that they are interested in. The owner also had and admin dashboard of their own where they were able to post new products, track their items in stock, see purchases made and orders made and also approve orders. This was a very big project that I was so happy to complete and the client walked away happy and completely satisfied. ",
-    headline: "A full-stack e-commerce shop.",
+    headline:
+      "A full-stack e-commerce shop. Built with react, node js, express, mongo DB, styled components.",
     category: ["front-end"],
     title: "project",
     inProgress: false,
@@ -92,7 +93,8 @@ export const ProjectsData = [
     github: "https://github.com/martindevelopske/tesla-clone",
     description:
       "This was just a simple frontend  project where I decided to clone the famous Tesla landing page. I mainly did this to have a refresh and sharpen on my styling skills.",
-    headline: "Just woke up one saturday and made a clone of Tesla's site.",
+    headline:
+      "Just woke up one saturday and made a clone of Tesla's site. Built with react, styled components.",
     category: ["front-end"],
     title: "project",
     inProgress: false,
@@ -114,7 +116,8 @@ export const ProjectsData = [
     github: "https://github.com/martindevelopske/Blog",
     description:
       "This was a project I did where I built a blogs API in which consumes another API to fetch articles of diffrent kinds. Also, a user can authenticate and login and they will get blogs according to their preference. I also built the front end part of it with all the functionality available. It also has search functionality where you can get an article of a particular weather.",
-    headline: "A blog application.",
+    headline:
+      "A blog application. Built with react, node js, mui, styled components",
     category: ["front-end"],
     title: "project",
     inProgress: false,
