@@ -26,7 +26,7 @@ export default function Header() {
   return (
     <div className="w-full h-100 flex items-center justify-center fixed top-0 left-0 dark:bg-black bg-white z-50">
       <div
-        className={` max-w-full h-64 text-black w-5/6 dark:text-white flex items-center justify-end ${
+        className={` max-w-full h-64 text-black w-5/6 dark:text-white flex items-center justify-between ${
           currentpage !== "/" && "justify-between items-center"
         } dark:bg-1e bg-greyish rounded-3xl p-3`}
       >
@@ -45,6 +45,7 @@ export default function Header() {
             </button>
           </a>
         )}
+        <div className="text-green-500 text-md">@martindevelops</div>
         <button className="hover:scale-90" onClick={handleThemeSwitch}>
           {localStorage.theme === "light" ? (
             <FaMoon size={20} />

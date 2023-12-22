@@ -19,7 +19,7 @@ export default function ProjectCard({
 }: cardInput) {
   return (
     <>
-      <div className="relative flex flex-col w-3/4 md:w-1/3 lg:w-1/4 items-start gap-2 hover:scale-105 rounded-lg p-3 md:p-2 border border-greyish dark:border-line text-md bg-white dark:bg-1e  ">
+      <div className="relative flex flex-col w-full md:w-1/3 lg:w-1/4 items-start gap-2 hover:scale-105 rounded-lg p-3 md:p-2 border border-greyish dark:border-line text-md bg-white dark:bg-1e  ">
         {inProgress && (
           <div className="absolute rounded-md top-0 right-0 bg-green-500 text-white p-2">
             in Progress

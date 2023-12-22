@@ -32,21 +32,14 @@ const Resume = () => {
           </div>
 
           <p className="text-md font-mono">
-            I am a passionate and experienced full-stack developer and junior
-            DevOps engineer with a proven track record of designing, developing,
-            and deploying high-quality web applications. I possess a deep
-            understanding of both front-end and back-end technologies, enabling
-            me to create seamless user experiences and robust server-side
-            architectures. As a driven and flexible junior DevOps engineer, I
-            provide a strong background in development and operations along with
-            a love of learning. Having worked on web application design,
-            development, and deployment projects, I'm eager to use my expertise
-            to further the DevOps field. I'm well-suited to adopt new
-            technologies and approaches because of my curiosity and want to
-            learn, which allows me to actively participate in creating and
-            improving reliable and effective systems. To get the best outcomes,
-            I'm dedicated to learning more, working with cross-functional teams,
-            and promoting ongoing DevOps practice improvement.
+            I have extensive experience developing and executing top-notch web
+            apps as a seasoned full-stack developer. With a strong background in
+            server-side architecture and seamless user experiences, I am
+            proficient in both front-end and back-end technologies. I am
+            committed to providing creative solutions and keeping up with the
+            most recent business trends in order to effectively contribute to
+            any development project. I have a track record of success in this
+            regard.
           </p>
 
           {/* Add more sections as needed */}
@@ -71,16 +64,17 @@ const Resume = () => {
               Jan 2023 - Sep 2023
             </div>
             <br />
-            As a Back-end Developer at Songa, a dynamic ride service app, I'm
-            responsible for designing and developing the robust server-side
-            components that drive the platform's ride booking and management
-            functionalities. Collaborating closely with front end developers and
-            cross- functional teams, I ensure a seamless and reliable user
-            experience by designing efficient APIs, optimizing database
-            interactions, and implementing real-time tracking features. Within
-            an Agile environment, I contribute to enhancing the app's
-            scalability, security, and overall performance, delivering an
-            exceptional and safe ride-hailing experience to users
+            As a full-stack developer, I was able to effectively establish
+            server-side logic and database structures, which helped build
+            reliable apps. Furthermore, I was an expert in creating effective
+            server-side APIs that enabled smooth communication between the
+            front-end and back-end parts. I set up and maintained web servers to
+            guarantee application dependability and peak performance. When
+            problems occurred, I was excellent at debugging and diagnosing
+            application failures, using a methodical manner to quickly fix
+            problems. My job was centered around collaboration; to create new
+            and well-coordinated solutions, I worked closely with designers,
+            product managers, and other engineers in cross-functional teams.
           </div>
           <br />
           <div className="text-md">
@@ -142,14 +136,9 @@ const Resume = () => {
             </strong>
             <br />
             Songa is a ride service application which bridges the gap between
-            riders in Kenya and their clients. At songa, I worked as a back-end
-            engineer where I, together with a team of other developers
-            collaborated in developing the API that is consumed by the
-            application. We mostly used Typescript, Node js, express,
-            geolocations API, postgreSQL and prisma ORM in this application. At
-            songa, I learnt so much from working with teams to developing such a
-            very complex API which can have very many users consuming it at a
-            given moment.
+            riders in Kenya and their clients. Built with Node JS, express,
+            postgresql, prisma and Next js. Allows users to request for rides,
+            get rides, pay for rides and complete rides.
           </p>
           <br />
           <p className="text-md">
@@ -160,23 +149,14 @@ const Resume = () => {
               </Link>
             </strong>
             <br />
-            This is a project that I received from a Client who basically wanted
-            an e-commerce shop with all the functionalities involved. The
-            application was built with a node js back end and a react front-end.
-            The user was able to sign-up and login, search for specific
-            products, make an order, make payments for the product and also
-            complete checkout. They also received notifications after actions
-            like purchases and new items in stock that they are interested in.
-            The owner also had and admin dashboard of their own where they were
-            able to post new products, track their items in stock, see purchases
-            made and orders made and also approve orders. This was a very big
-            project that I was so happy to complete and the client walked away
-            happy and completely satisfied.
+            An E-commerce web application built with React JS, node JS,express,
+            and mongoDB. This allows users to authenticate, add products, check
+            inventory and also customers to make purchases.
           </p>
           <br />
           <div className="text-md">
             You can take a look at more projects on my portfolio.{" "}
-            <Link to="" className="text-blue-400">
+            <Link to="/projects" className="text-blue-400">
               Projects
             </Link>
           </div>
