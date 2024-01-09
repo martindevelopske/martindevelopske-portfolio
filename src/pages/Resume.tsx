@@ -43,9 +43,20 @@ const Resume = () => {
           </h2>
           <ul className="text-md">
             <li>
-              <strong>Songa: Full-stack Engineer (LinkedIn)</strong>
-              <br />
-              (Jan 2023 - Sep 2023)
+              <div className="flex items-center justify-between">
+                <strong>
+                  Songa: Full-stack Engineer (
+                  <Link
+                    to="https://www.linkedin.com/company/songaapp/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B1JKUV3VZRuKNgXpz6fLz9g%3D%3D"
+                    target="__blank"
+                    className=" text-blue-600"
+                  >
+                    LinkedIn
+                  </Link>
+                  )
+                </strong>
+                (Jan 2023 - Sep 2023)
+              </div>
               <ul>
                 <li className="list-disc ml-6">
                   Established server-side logic and database structures for
@@ -70,9 +81,10 @@ const Resume = () => {
               </ul>
             </li>
             <li>
-              <strong>Freelance Developer</strong>
-              <br />
-              (2022 - present)
+              <div className="flex items-center justify-between">
+                <strong>Freelance Developer</strong>
+                (2022 - present)
+              </div>
               <ul>
                 <li className="list-disc ml-6">
                   Collaborated with diverse clients to deliver custom websites
@@ -123,7 +135,15 @@ const Resume = () => {
           <ul>
             {/* Songa App Project */}
             <li>
-              <strong>Songa App</strong> (View)
+              <strong>Songa App</strong> (
+              <Link
+                to="https://www.linkedin.com/company/songaapp/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B1JKUV3VZRuKNgXpz6fLz9g%3D%3D"
+                target="__blank"
+                className=" text-blue-600"
+              >
+                View
+              </Link>
+              )
               <ul>
                 <li className="list-disc ml-6">
                   Ride service application built with Node JS, Express,
@@ -136,7 +156,11 @@ const Resume = () => {
             </li>
             {/* E-commerce Site Project */}
             <li>
-              <strong>E-commerce Site</strong> (View)
+              <strong>E-commerce Site</strong> (
+              <Link to="" className=" text-blue-600">
+                View
+              </Link>
+              )
               <ul>
                 <li className="list-disc ml-6">
                   Web application built with React JS, Node JS, Express, and
