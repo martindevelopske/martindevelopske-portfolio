@@ -30,11 +30,11 @@ const Resume = () => {
           </div>
           {/* Summary Section */}
           <p className="text-md font-mono">
-            Experienced Fullstack Developer with a strong background in
-            server-side architecture and seamless user experiences. Proficient
-            in both front-end and back-end technologies. Committed to providing
-            creative solutions and staying updated on recent business trends to
-            contribute effectively to development projects.
+            Experienced Fullstack Developer with a robust background in web
+            development, specializing in crafting seamless user experiences.
+            Proficient in both front-end and back-end technologies, dedicated to
+            delivering creative solutions and staying abreast of the latest
+            business trends to contribute effectively to development projects.
           </p>
 
           {/* Experience Section */}
