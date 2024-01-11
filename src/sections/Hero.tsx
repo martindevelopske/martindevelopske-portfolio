@@ -26,8 +26,8 @@ export default function Hero() {
           <div className="w-full flex-col md:flex-row gap-2  h-auto">
             <div className="flex flex-col gap-5 items-start p-3 justify-center md:w-3/4 w-full ">
               <div className="w-full">
-                A Full-stack developer and DevOps Engineer based in Nairobi,
-                Kenya. I enjoy building and deploying web applications.
+                A Full-stack software Engineer based in Nairobi, Kenya. I enjoy
+                building and deploying web applications.
               </div>
               <div className="flex items-center justify-center">
                 <div>

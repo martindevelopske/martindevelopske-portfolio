@@ -26,9 +26,8 @@ function About() {
           lies in utilizing a variety of programming languages, frameworks and
           tools including:
           <span className="text-green-600">
-            JavaScript, Typescript, React, Next JS, Tailwind CSS and Node.js,
-            Prisma ORM, Mongo DB, Redis, Postgresql, Git, Jenkins, Docker,
-            Kubernetes.
+            JavaScript, Typescript, React, Next JS, Node JS, Python, Django,
+            Tailwind CSS, Prisma ORM, Mongo DB, Redis, Postgresql, Git, Docker,
           </span>
         </div>
 

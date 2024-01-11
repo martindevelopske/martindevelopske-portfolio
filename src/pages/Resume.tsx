@@ -117,14 +117,13 @@ const Resume = () => {
             </li>
             <li>
               <strong>Back-End:</strong> NodeJs, Javascript, Typescript,
-              Express, Prisma ORM.
+              Express, Python, Django, Prisma ORM.
             </li>
             <li>
               <strong>Databases:</strong> MongoDB, Redis, Postgresql.
             </li>
             <li>
-              <strong>DevOps:</strong> Git, Jenkins, Docker, Kubernetes,
-              Terraform, AWS.
+              <strong>DevOps:</strong> Git, Github, Docker, AWS.
             </li>
           </ul>
           {/* Projects Section */}
