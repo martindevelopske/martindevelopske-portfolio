@@ -2,7 +2,7 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Resume from "./pages/Resume";
 import { ThemeProvider } from "./contexts/ThemeContext";
-import ProjectsPage from "./pages/Projects";
+import ProjectsPage from "./pages/ProjectsPage";
 import BlogsPage from "./pages/BlogsPage";
 import Wrapper from "./pages/Wrapper";
 

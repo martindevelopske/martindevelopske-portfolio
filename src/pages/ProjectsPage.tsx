@@ -23,14 +23,24 @@ function ProjectsPage() {
       </div>
       <div className="flex flex-col md:flex-row md:flex-wrap w-3/4 p-2 items-center justify-center md:w-full gap-6 mt-32">
         {ProjectsData.map((item) => {
-          const { name, id, img, link, github, headline, title, featured } =
-            item;
+          const {
+            name,
+            id,
+            img,
+            category,
+            link,
+            github,
+            headline,
+            title,
+            featured,
+          } = item;
 
           return (
             <ProjectCard
               name={name}
               image={img}
               link={link}
+              category={category}
               github={github}
               key={id}
               headline={headline}

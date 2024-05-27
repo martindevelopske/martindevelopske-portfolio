@@ -8,12 +8,14 @@ interface cardInput {
   inProgress: boolean;
   headline: string;
   featured: boolean;
+  category: string[];
   title: string;
   stack?: string[];
 }
 export default function ProjectCard({
   name,
   image,
+  category,
   link,
   github,
   title,
@@ -33,10 +35,17 @@ export default function ProjectCard({
             in Progress
           </div>
         )}
-        <div className="w-full h-64 p-2">
-          <button className="p-2 dark:bg-lightgreen bg-verylightgreen text-green-500 text-sm rounded-3xl">
+        <div className="w-full h-64 p-2 flex gap-3 ">
+          <button className="px-3 py-1 h-35 flex items-center justify-center dark:bg-lightgreen bg-verylightgreen text-green-500 text-md rounded-lg">
             {title}
           </button>
+          {category.map((cat) => {
+            return (
+              <button className="px-3 py-1 h-35 flex items-center justify-center dark:bg-lightgreen bg-verylightgreen text-green-500 text-md rounded-lg">
+                {cat}
+              </button>
+            );
+          })}
         </div>
         <div className="flex flex-col gap-1 text-md h-auto p-2">
           <div className="font-bold">{name}</div>

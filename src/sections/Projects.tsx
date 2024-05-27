@@ -19,8 +19,17 @@ function Projects() {
       </div>
       <div className="flex flex-col md:flex-row md:flex-wrap w-3/4 p-2 items-center justify-center md:w-full gap-5">
         {ProjectsData.map((item) => {
-          const { name, id, img, link, github, headline, title, featured } =
-            item;
+          const {
+            name,
+            id,
+            img,
+            category,
+            link,
+            github,
+            headline,
+            title,
+            featured,
+          } = item;
           return (
             featured && (
               <ProjectCard
@@ -31,6 +40,7 @@ function Projects() {
                 key={id}
                 headline={headline}
                 title={title}
+                category={category}
                 featured={featured}
                 inProgress={item.inProgress}
               />
