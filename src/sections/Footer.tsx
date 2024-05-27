@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { IconsData } from "../data/Iconsdata";
-import scrollToElement from "../helpers/Sroller";
+import ScrollToElement from "../helpers/Sroller";
 export default function Footer() {
   return (
     <div className="w-full h-100 py-4 flex items-center justify-center dark:bg-blackbg dark:text-white text-black bg-white">
@@ -9,19 +9,19 @@ export default function Footer() {
           <ul className="flex text-sm md:text-md gap-2">
             <li
               className="cursor-pointer hover:text-green-600"
-              onClick={() => scrollToElement("hero")}
+              onClick={() => ScrollToElement("hero")}
             >
               home
             </li>
             <li
               className="cursor-pointer hover:text-green-600"
-              onClick={() => scrollToElement("about")}
+              onClick={() => ScrollToElement("about")}
             >
               about
             </li>
             <li
               className="cursor-pointer hover:text-green-600"
-              onClick={() => scrollToElement("projects")}
+              onClick={() => ScrollToElement("projects")}
             >
               projects
             </li>
@@ -30,7 +30,7 @@ export default function Footer() {
             </Link>
             <li
               className="cursor-pointer hover:text-green-600"
-              onClick={() => scrollToElement("contact")}
+              onClick={() => ScrollToElement("contact")}
             >
               contact
             </li>
@@ -39,7 +39,7 @@ export default function Footer() {
         <div className="flex gap-3 items-center justify-center">
           {IconsData.map((image) => {
             return (
-              <a href={image.href} target="__blank" key={image.id}>
+              <a href={image.href} target="_blank" key={image.id}>
                 <img
                   src={image.link}
                   alt={image.name}

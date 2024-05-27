@@ -62,6 +62,7 @@ export default {
         "5xl": "3.052rem",
       },
     },
+    // fontFamily: {},
   },
   plugins: [],
 };

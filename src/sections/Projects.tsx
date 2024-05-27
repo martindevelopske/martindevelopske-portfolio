@@ -19,18 +19,22 @@ function Projects() {
       </div>
       <div className="flex flex-col md:flex-row md:flex-wrap w-3/4 p-2 items-center justify-center md:w-full gap-5">
         {ProjectsData.map((item) => {
-          const { name, id, img, link, github, headline, title } = item;
+          const { name, id, img, link, github, headline, title, featured } =
+            item;
           return (
-            <ProjectCard
-              name={name}
-              image={img}
-              link={link}
-              github={github}
-              key={id}
-              headline={headline}
-              title={title}
-              inProgress={item.inProgress}
-            />
+            featured && (
+              <ProjectCard
+                name={name}
+                image={img}
+                link={link}
+                github={github}
+                key={id}
+                headline={headline}
+                title={title}
+                featured={featured}
+                inProgress={item.inProgress}
+              />
+            )
           );
         })}
       </div>

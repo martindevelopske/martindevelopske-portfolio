@@ -3,7 +3,6 @@ import Hero from "../sections/Hero";
 import About from "../sections/About";
 import Projects from "../sections/Projects";
 import Letswork from "../sections/Letswork";
-import Footer from "../sections/Footer";
 import Contact from "../sections/Contact";
 import Whatsapp from "../components/Whatsapp";
 
@@ -16,7 +15,6 @@ export default function HomePage() {
       <Projects />
       <Letswork />
       <Contact />
-      <Footer />
       <Whatsapp />
     </div>
   );

@@ -25,7 +25,7 @@ export default function Hero() {
           <div className="border-b border-purple-200 border-2 mt-12 w-full"></div>
           <div className="w-full flex-col md:flex-row gap-2  h-auto">
             <div className="flex flex-col gap-5 items-start p-3 justify-center md:w-3/4 w-full ">
-              <div className="w-full">
+              <div className="w-full font-sans">
                 A Full-stack software Engineer based in Nairobi, Kenya. I enjoy
                 building and deploying web applications.
               </div>
@@ -63,7 +63,7 @@ export default function Hero() {
               <div className="flex gap-3 items-center justify-center p-3">
                 {IconsData.map((image) => {
                   return (
-                    <a href={image.href} target="__blank" key={image.id}>
+                    <a href={image.href} target="_blank" key={image.id}>
                       <img
                         src={image.link}
                         alt={image.name}

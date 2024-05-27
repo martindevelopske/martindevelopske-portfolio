@@ -4,6 +4,7 @@ import { FiSun } from "react-icons/fi";
 import { FaArrowLeft } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import { ThemeContext } from "../contexts/ThemeContext";
+import ScrollToElement from "../helpers/Sroller";
 
 // type Theme = "dark" | "light";
 export default function Header() {
@@ -24,7 +25,7 @@ export default function Header() {
   };
 
   return (
-    <div className="w-full h-100 flex items-center justify-center fixed top-0 left-0 dark:bg-black bg-white z-50">
+    <div className="w-full h-100 flex items-center justify-center fixed top-0 left-0 dark:bg-black bg-white z-50 font-sans">
       <div
         className={` max-w-full h-64 text-black w-5/6 dark:text-white flex items-center justify-between ${
           currentpage !== "/" && "justify-between items-center"
@@ -35,6 +36,7 @@ export default function Header() {
             <FaArrowLeft size={20} />
           </Link>
         )}
+        <div className="text-green-500 text-md">@martindevelops</div>
         {currentpage === "/resume" && (
           <a
             href="/Martin-Ndung'u-Resume.pdf"
@@ -45,7 +47,22 @@ export default function Header() {
             </button>
           </a>
         )}
-        <div className="text-green-500 text-md">@martindevelops</div>
+        <div className="">
+          <ul className="flex gap-3 mx-2 font-sans text-md lg:text-lg">
+            <Link to="/" className="cursor-pointer hover:text-green-600">
+              home
+            </Link>
+            <Link
+              to="/projects"
+              className="cursor-pointer hover:text-green-600"
+            >
+              Projects
+            </Link>
+            <Link to="/blog" className="cursor-pointer hover:text-green-600">
+              Blog
+            </Link>
+          </ul>{" "}
+        </div>
         <button className="hover:scale-90" onClick={handleThemeSwitch}>
           {localStorage.theme === "light" ? (
             <FaMoon size={20} />

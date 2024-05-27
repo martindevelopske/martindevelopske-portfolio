@@ -1,10 +1,10 @@
 export const IconsData = [
-  {
-    id: 0,
-    name: "x",
-    link: "https://res.cloudinary.com/dilbjaf90/image/upload/v1699431213/twitter_1_vihrlh.png",
-    href: "https://x.com/martindevelops",
-  },
+  // {
+  //   id: 0,
+  //   name: "x",
+  //   link: "https://res.cloudinary.com/dilbjaf90/image/upload/v1699431213/twitter_1_vihrlh.png",
+  //   href: "https://x.com/martindevelops",
+  // },
   {
     id: 1,
     name: "github",
@@ -21,6 +21,6 @@ export const IconsData = [
     id: 3,
     name: "medium",
     link: "https://res.cloudinary.com/dilbjaf90/image/upload/v1699431165/medium_1_hdjsgx.png",
-    href: "google.com",
+    href: "https://medium.com/@martindevelopske",
   },
 ];

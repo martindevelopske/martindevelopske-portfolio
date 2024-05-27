@@ -21,7 +21,53 @@ export const ProjectsData = [
   //   inProgress: true,
   // },
   {
+    id: 1,
+    name: "ClassSense-API",
+    img: "/logos/classsense.jpg",
+    stack: [
+      "/logos/36/js36.png",
+      "/logos/36/ex50.png",
+      "/logos/36/node36.png",
+      "/logos/36/redux48.png",
+      "/logos/36/mui48.png",
+      "/logos/36/react36.png",
+      "/logos/36/styled.png",
+    ],
+    link: "https://github.com/martindevelopske/ClassSense-API.git",
+    github: "https://github.com/martindevelopske/ClassSense-API.git",
+    featured: true,
+    description: "",
+    headline:
+      "ClassSense is an automated attendance tracking app that helps educators and institution to collect and analyse attendance data, allowing them to get rid of the traditional pen and paper method and also giving them dashboards to view data and decide on what parts to improve on. This API powers the Classesnse web application and is build using node js and express. It is also connected to a postgres DB and uses web Sockets to establish persistent Communication with the client application.",
+    category: ["front-end"],
+    title: "project",
+    inProgress: false,
+  },
+  {
     id: 2,
+    name: "ClassSense",
+    img: "/logos/classsense.jpg",
+    stack: [
+      "/logos/36/js36.png",
+      "/logos/36/ex50.png",
+      "/logos/36/node36.png",
+      "/logos/36/redux48.png",
+      "/logos/36/mui48.png",
+      "/logos/36/react36.png",
+      "/logos/36/styled.png",
+    ],
+    link: "https://github.com/martindevelopske/classSense-client.git",
+    github: "https://github.com/martindevelopske/classSense-client.git",
+    description: "",
+    featured: true,
+    headline:
+      "ClassSense is an automated attendance tracking app that helps educators and institution to collect and analyse attendance data, allowing them to get rid of the traditional pen and paper method and also giving them dashboards to view data and decide on what parts to improve on. This is a react application that uses QR code Technology to sign student to class by just scanning a generated QR code.",
+    category: ["front-end"],
+    title: "project",
+    inProgress: false,
+  },
+  {
+    id: 3,
     name: "Portfolio",
     img: "https://res.cloudinary.com/dilbjaf90/image/upload/v1703156807/siteshot_jepmpl.jpg",
     stack: [
@@ -36,13 +82,14 @@ export const ProjectsData = [
     link: "",
     github: "",
     description: "",
+    featured: true,
     headline: "A portfolio made with React, Typescript and Tailwind CSS",
     category: ["front-end"],
     title: "project",
     inProgress: false,
   },
   {
-    id: 3,
+    id: 4,
     name: "Songa",
     img: "https://res.cloudinary.com/dilbjaf90/image/upload/v1693400001/Screenshot_2023-08-30_155254_twamor.png",
     stack: ["/logos/36/ts36.png", "/logos/36/node36.png", "/logos/36/ex50.png"],
@@ -55,9 +102,10 @@ export const ProjectsData = [
     category: "back-end",
     title: "project",
     inProgress: false,
+    featured: true,
   },
   {
-    id: 4,
+    id: 5,
     name: "E-commerce Shop",
     img: "https://res.cloudinary.com/dilbjaf90/image/upload/v1693400122/e-commerce_xak9dz.jpg",
     stack: [
@@ -71,6 +119,7 @@ export const ProjectsData = [
     ],
     link: "",
     github: "",
+    featured: true,
     description:
       "This is a project that I recieved from a Client who basically wanted an e-commerce shop with all the functionalities involved. The application was built with a node js back end and a react frontend. The user was able to signup and login, search for specific products, make an order, make payments for the product and also complete checkout. They also recieved notifications after actions like purchases and new items in stock that they are interested in. The owner also had and admin dashboard of their own where they were able to post new products, track their items in stock, see purchases made and orders made and also approve orders. This was a very big project that I was so happy to complete and the client walked away happy and completely satisfied. ",
     headline:
@@ -80,7 +129,7 @@ export const ProjectsData = [
     inProgress: false,
   },
   {
-    id: 5,
+    id: 6,
     name: "Tesla Clone",
     img: "https://res.cloudinary.com/dilbjaf90/image/upload/v1681231103/teslaclone-snip_kbiw4e.png",
     stack: [
@@ -98,9 +147,10 @@ export const ProjectsData = [
     category: ["front-end"],
     title: "project",
     inProgress: false,
+    featured: true,
   },
   {
-    id: 6,
+    id: 7,
     name: "Trending News",
     img: "https://res.cloudinary.com/dilbjaf90/image/upload/v1681231109/blog-snip_p01kpg.png",
     stack: [
@@ -121,5 +171,6 @@ export const ProjectsData = [
     category: ["front-end"],
     title: "project",
     inProgress: false,
+    featured: false,
   },
 ];
