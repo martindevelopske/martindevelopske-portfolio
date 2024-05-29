@@ -24,10 +24,25 @@ function About() {
           business trends in order to effectively contribute to any development
           project. I have a track record of success in this regard. My expertise
           lies in utilizing a variety of programming languages, frameworks and
-          tools including:
+          Databases including:
+          <br />
+          <br />
+          <h3>Languages and Frameworks</h3>
           <span className="text-green-600">
-            JavaScript, Typescript, React, Next JS, Node JS, Python, Django,
-            Tailwind CSS, Prisma ORM, Mongo DB, Redis, Postgresql, Git, Docker,
+            JavaScript, Typescript, Node JS, Java, SpringBoot, React, Next JS,
+            Python, Django.
+          </span>
+          <br></br>
+          <br></br>
+          <h3>Databases</h3>
+          <span className="text-green-600">
+            PostgresQl, Mysql, Mongo DB, Redis.
+          </span>
+          <br></br>
+          <br></br>
+          <h3>Tools</h3>
+          <span className="text-green-600">
+            Git, Docker, ORMs, Apache kafka.
           </span>
         </div>
 

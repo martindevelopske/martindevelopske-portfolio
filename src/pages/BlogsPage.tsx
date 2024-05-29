@@ -17,7 +17,7 @@ function BlogsPage() {
       </div>
       <div className="flex items-center justify-center gap-10">
         {blogsData.map((item) => {
-          const { title, id, link, image } = item;
+          const { link, image } = item;
           return (
             <div className="w-[300px] flex flex-col gap-3 mt-20 items-center justify-center">
               <img

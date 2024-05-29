@@ -3,7 +3,7 @@ export const StacksData = [
   { id: 3, src: "/logos/js.png" },
   { id: 4, src: "/logos/typescript.png" },
   { id: 5, src: "/logos/reactjs.png" },
-  { id: 6, src: "/logos/next.svg" },
+  // { id: 6, src: "/logos/next.svg" },
   { id: 7, src: "/logos/node.png" },
   { id: 8, src: "/logos/ex.png" },
   { id: 2, src: "/logos/java.png" },

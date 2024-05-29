@@ -4,7 +4,6 @@ import { FiSun } from "react-icons/fi";
 import { FaArrowLeft } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import { ThemeContext } from "../contexts/ThemeContext";
-import ScrollToElement from "../helpers/Sroller";
 
 // type Theme = "dark" | "light";
 export default function Header() {
