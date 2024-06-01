@@ -15,7 +15,7 @@ function BlogsPage() {
         to connect and grow together. Join me on this journey of discovery and
         let's explore the world of tech, one post at a time. Happy reading!
       </div>
-      <div className="flex items-center justify-center gap-10">
+      <div className="flex items-center flex-wrap justify-center gap-10">
         {blogsData.map((item) => {
           const { link, image } = item;
           return (

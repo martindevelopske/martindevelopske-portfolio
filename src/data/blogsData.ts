@@ -19,4 +19,11 @@ export const blogsData = [
     link: "https://medium.com/@martindevelopske/from-code-to-execution-a-comparative-analysis-of-interpreters-and-compilers-00584cc55ab0",
     image: "/articles/compilers.jpg",
   },
+  {
+    id: 4,
+    title:
+      "Let’s Take a Deep Dive into HTTP. What makes up HTTP Request and Responses, how HTTP works and versions evolution.",
+    link: "https://medium.com/@martindevelopske/lets-take-a-deep-dive-into-http-70ade0176330",
+    image: "/articles/http-article.jpg",
+  },
 ];
