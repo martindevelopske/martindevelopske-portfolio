@@ -33,8 +33,8 @@ export const ProjectsData = [
       "/logos/36/react36.png",
       "/logos/36/styled.png",
     ],
-    link: "https://github.com/martindevelopske/ClassSense-API.git",
-    github: "https://github.com/martindevelopske/ClassSense-API.git",
+    link: "https://github.com/martindevelopske/ClassSense-nodeApi.git",
+    github: "https://github.com/martindevelopske/ClassSense-nodeApi.git",
     featured: true,
     description: "",
     headline:
