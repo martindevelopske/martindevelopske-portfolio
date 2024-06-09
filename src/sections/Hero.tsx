@@ -41,8 +41,8 @@ export default function Hero() {
               </div>
               <div className="flex  gap-3">
                 <a
-                  href="/Martin-Ndung'u-Resume.pdf"
-                  download="Martin-Ndung'u-Resume.pdf"
+                  href="/Resume-Martin-Ndung'u-in.pdf"
+                  download="Resume-Martin-Ndung'u-in.pdf"
                 >
                   <button className="border p-2 hover:scale-90 text-green-600 rounded-md">
                     Download Resume
