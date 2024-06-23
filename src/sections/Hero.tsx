@@ -44,15 +44,15 @@ export default function Hero() {
                   href="/Resume-Martin-Ndung'u-in.pdf"
                   download="Resume-Martin-Ndung'u-in.pdf"
                 >
-                  <button className="border p-2 hover:scale-90 text-green-600 rounded-md">
+                  <button className="border p-2 hover:scale-90 bg-green-600 text-white rounded-md">
                     Download Resume
                   </button>
                 </a>
-                <Link to="/resume">
+                {/* <Link to="/resume">
                   <button className="border border-green-400 p-2 hover:scale-90 text-white bg-green-600 rounded-md">
                     View Resume
                   </button>
-                </Link>
+                </Link> */}
               </div>
             </div>
             <div className="flex flex-col gap-5 text-sm items-start justify-center md:w-3/4 w-full mt-8  h-full">
