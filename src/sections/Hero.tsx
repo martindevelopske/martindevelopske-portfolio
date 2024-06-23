@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { IconsData } from "../data/Iconsdata";
 
 export default function Hero() {
