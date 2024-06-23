@@ -15,7 +15,7 @@ export const IconsData = [
     id: 2,
     name: "linkedin",
     link: "https://res.cloudinary.com/dilbjaf90/image/upload/v1699429992/linkedin_scud9x.png",
-    href: "https://www.linkedin.com/in/martin-ndungu-nganga",
+    href: "https://www.linkedin.com/in/martin-ndungu-in",
   },
   {
     id: 3,
